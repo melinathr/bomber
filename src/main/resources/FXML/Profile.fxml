@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="pane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ProfileMenu">
+
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Label text="Profile" />
+            <HBox alignment="CENTER" spacing="10">
+                <TextField fx:id="newUsername" maxWidth="134.0" prefHeight="22.0" prefWidth="134.0" promptText="change username" />
+                <Button onMouseClicked="#changeUsername" styleClass="changeButton" text="change" />
+            </HBox>
+            <HBox alignment="CENTER" spacing="10">
+                <TextField fx:id="newPassword" maxWidth="134.0" prefHeight="22.0" prefWidth="134.0" promptText="change password" />
+                <Button onMouseClicked="#changePassword" styleClass="changeButton" text="change" />
+            </HBox>
+         <HBox alignment="CENTER" prefHeight="38.0" prefWidth="600.0">
+            <children>
+               <HBox alignment="CENTER" prefHeight="38.0" prefWidth="264.0" spacing="10.0">
+                  <children>
+                     <Button mnemonicParsing="false" onMouseClicked="#deleteAccount" styleClass="changeButton" text="delete account" />
+                     <Button mnemonicParsing="false" onMouseClicked="#goToAvatarMenu" styleClass="changeButton" text="Avatar" />
+                        <Button onMouseClicked="#backToMain" styleClass="changeButton" text="back" />
+                  </children>
+               </HBox>
+            </children>
+         </HBox>
+        </VBox>
+    </center>
+
+</BorderPane>

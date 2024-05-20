@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.StartMenu"
+            id="pane"
+            prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/Style.css">
+
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Label text="Atomic Bomber"/>
+            <Button text="sign in" onMouseClicked="#signin"/>
+            <Button text="log in" onMouseClicked="#login"/>
+            <Button text="play as guest" onMouseClicked="#playAsGuest" styleClass="playAsGuest"/>
+        </VBox>
+    </center>
+</BorderPane>
