@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane id="pane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/Style.css"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SettingMenu">
+
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <Label text="Setting"/>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="600.0" spacing="10.0">
+                <children>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="level"/>
+                    <Button mnemonicParsing="false" onMouseClicked="#easy" text="easy" styleClass="changeButton"/>
+                    <Button mnemonicParsing="false" onMouseClicked="#medium" text="medium" styleClass="changeButton"/>
+                    <Button mnemonicParsing="false" onMouseClicked="#hard" text="hard" styleClass="changeButton"/>
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="28.0" prefWidth="600.0" spacing="10.0">
+                <children>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="sound"/>
+                    <Button mnemonicParsing="false" text="mute" onMouseClicked="#mute" styleClass="changeButton" />
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="27.0" prefWidth="600.0" spacing="10.0">
+                <children>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="color"/>
+                    <Button mnemonicParsing="false" text="color" styleClass="changeButton" onMouseClicked="#setGray"/>
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="31.0" prefWidth="600.0" spacing="10.0">
+                <children>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="keys" wrappingWidth="27.20001220703125"/>
+                    <Button mnemonicParsing="false" text="wasd" onMouseClicked="#useWASD" styleClass="changeButton"/>
+                </children>
+            </HBox>
+            <Button onMouseClicked="#backToMain" text="back"/>
+        </VBox>
+    </center>
+
+</BorderPane>

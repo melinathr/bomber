@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane id="pane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainMenu">
+   <center>
+        <VBox alignment="CENTER" prefHeight="624.0" prefWidth="600.0" spacing="10" BorderPane.alignment="CENTER">
+         <Pane prefHeight="98.0" prefWidth="600.0" />
+            <Button onMouseClicked="#startGame" text="start new game" />
+            <Button onMouseClicked="#continueGame" text="continue last game" />
+            <Button onMouseClicked="#goToProfileMenu" text="show profile" />
+            <Button onMouseClicked="#goToScoresChart" text="show scores" />
+            <Button onMouseClicked="#goToSetting" text="setting" />
+            <Button onMouseClicked="#logout" text="logout" />
+        </VBox>
+   </center>
+</BorderPane>

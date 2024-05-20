@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="pane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AvatarMenu">
+   <children>
+      <Label layoutX="272.0" layoutY="44.0" text="Avatar" />
+      <Button layoutX="274.0" layoutY="295.0" mnemonicParsing="false" onMouseClicked="#back" text="back" />
+      <Label layoutX="58.0" layoutY="219.0" />
+      <Text layoutX="175.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="your picture" />
+      <TextField fx:id="adress" layoutX="247.0" layoutY="191.0" promptText="write the address" />
+      <Button layoutX="383.0" layoutY="188.0" mnemonicParsing="false" text="Button" styleClass="changeButton" onMouseClicked="#setAvatar"/>
+   </children>
+</AnchorPane>
